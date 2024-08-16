@@ -1,9 +1,3 @@
-h4 {
-    color:#ff00ffb9;
-    background-color: aquamarine;}
-h5 {color:rgb(240, 43, 213)}
-
-
 #page {
     width:900px;
     margin: 0 auto;
@@ -11,13 +5,13 @@ h5 {color:rgb(240, 43, 213)}
 }
 #header {
     width: 100%;
-    height: 80px;
+    height: 150px;
     background-color: chocolate;
 }
 .main {
     display: flex;
 }
-#sidebar {
+#sidebar-left {
     width: 150px;
     height: 500px;
     background-color: aqua;
@@ -27,8 +21,13 @@ h5 {color:rgb(240, 43, 213)}
     height: 500px;
     background-color: chartreuse;
 }
+#sidebar-right {
+    width: 150px;
+    height: 500px;
+    background-color: darkorchid;
+}
 #footer {
     width: 100%;
-    height: 500px;
+    height: 150px;
     background-color: darkcyan;
 }

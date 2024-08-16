@@ -1,9 +1,3 @@
-h4 {
-    color:#ff00ffb9;
-    background-color: aquamarine;}
-h5 {color:rgb(240, 43, 213)}
-
-
 #page {
     width:900px;
     margin: 0 auto;
@@ -21,6 +15,7 @@ h5 {color:rgb(240, 43, 213)}
     width: 150px;
     height: 500px;
     background-color: aqua;
+   
 }
 #content {
     width: 750px;
@@ -28,7 +23,8 @@ h5 {color:rgb(240, 43, 213)}
     background-color: chartreuse;
 }
 #footer {
-    width: 100%;
-    height: 500px;
+    width:100%;
+    height: 160px;
     background-color: darkcyan;
+    
 }
