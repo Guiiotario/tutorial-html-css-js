@@ -49,6 +49,14 @@ nav ul {
     font-size: 18px;
 }
 
+header .wrapper #logo a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    padding: 20px 0;
+    display: flex;
+}
+
 header nav ul li a {
     color: #FFF;
     text-decoration: none;
@@ -67,7 +75,7 @@ header nav ul li a:hover {
     
 }
 
-.active :hover {
+.active:hover {
     border-bottom: 5px solid #8C1AF6;
 }
 
