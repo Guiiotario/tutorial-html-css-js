@@ -27,6 +27,8 @@ header .wrapper{
 
 #logo{
     width: 150px;
+    display: flex;
+    gap: 10px;
     
 }
 #logo h1{
@@ -34,8 +36,42 @@ header .wrapper{
     color: #FFF;
 }
 
-nav{
-    width: 450px;
-    height: 90px;
-    background: #474747;
+#logo h1 span {
+    color: #8C1AF6;
+}
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    color: #FFF;
+    font-size: 18px;
+}
+
+header nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    padding: 30px 20px;
+}
+
+header nav ul li a:hover {
+    color: #cdcdcd;
+    border-bottom: 5px solid #a767fc;
+  
+}
+
+.active {
+    border-bottom: 5px solid #8C1AF6;
+    
+}
+
+.active :hover {
+    border-bottom: 5px solid #8C1AF6;
+}
+
+
+main {
+    color: #FFF;
 }
