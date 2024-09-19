@@ -83,3 +83,20 @@ header nav ul li a:hover {
 main {
     color: #FFF;
 }
+
+table {
+    border: 1px solid #cdcdcd;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #cdcdcd;
+    padding: 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: #4b4b4b
+}
+tr:nth-child(even) {
+    background-color: #202020
+}
