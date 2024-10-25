@@ -16,32 +16,36 @@
             //const nomeCompleto = nome + " " + sobreNome
             //const nomeCompleto = nome + " " + sobreNome // concatenar
 
+            const nome = "Renan" // const não pode ser redeclarada e nem ter seu valor alterado
+            const sobreNome = "Cavichi"
+            //const nomeCompleto = nome + " " + sobreNome // concatenar
+
             const campoEscolhido = 'altura'
 
-            const user = {
             function nomeCompleto(nome, sobreNome) {
                 return `${nome} ${sobreNome}`
             }
-        
+
             const nCompleto = function (nome, sobreNome){
-               return `${nome} ${sobreNome}`
+                return `${nome} ${sobreNome}`
             }
-           const nmCompleto = (nome, sobreNome) => {
-               return `${nome} ${sobreNome}`
-           }
+
+            const nmCompleto = (nome, sobreNome) => {
+                return `${nome} ${sobreNome}`
+            }
+
             const user = { // objeto
                 nome: "Paulo",
                 sobreNome: "da Silva",
                 email: "paulo@gmail.com",
                 altura: 1.75,
                 id: 10,
-
+                'Nome Completo': 'Paulo da Silva',
+                idAdmins: [4, 20, 30, 33],
+                endereco: {
                     rua: "Rua dos Bobos",
                     numero: 0
                 },
-                sobrenome: () => {
-                    return nome
-                }
                 nomeCompleto: (nome, sobreNome) => {
                     return `${nome} ${sobreNome}`
                 },
@@ -50,48 +54,43 @@
 
             const idAdmins = [1, 5, 10, 80, {rua: 'Dos Bodos', numero: 0}]
 
-            console.log(`Olá ${user.sobrenome()}, seja bem-vindo! ${idAdmins[4].numoro}`)
             console.log(`Olá ${teste(user.nome, user.sobreNome)}, seja bem-vindo! ${idAdmins[4].numoro}`)
+            console.log(`Olá ${user.nomeCompleto(user.nome, user.sobreNome)}, seja bem-vindo! ${idAdmins[4].numoro}`)
         </script>
     </head>
     <body>
-        <header>
-            <div class="wrapper">
-                <div id="logo">
-                    <a href="./index.html"> <img src="./img/finance-logo.svg" alt="Logo IF Fianance"> </a>
-                    <h1><a href="./index.html"><span>IF</span>Finance</a></h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a class="active" href="./index.html">Home</a></li>
-                        <li><a href="./quem-somos.html">Quem Somos</a></li>
-                        <li><a href="./bolsas.html">Bolsas</a></li>
-                        <li><a href="./destaques.html">Destaques</a></li>
-                        <li><a href="./contato.html">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+
         <main>
             <div class="wrapper">
-             <h1>Home</h1>
+                <h1>Home</h1>
+                <input type="text" id="txtInput">
+                <button onclick="pegarTexto()">Pegar Texto</button>
+                <button onclick="mudar()">Mudar Cor Logo</button>
+                <div id="resultado"></div>
             </div>
         </main>
-
-
-
-
-
-
-
-
-
-
     </body>
     <script>
-        const logo = document.getElementById('logo')
-        console.log("Elemento logo")
-        console.log(logo)
-        logo.innerHTML = '<p>Novo Logo<p>'
+        let valor = 10
+        valor += 5
+        console.log(valor)
+        let corAtual = 'preto'
+        const mudar = () => {
+            const logo = document.getElementById('logo')
+            if(corAtual == 'preto'){
+                logo.style.background = "#FFF"
+                corAtual = 'branco'
+            } else {
+                logo.style.background = "#000"
+                corAtual = 'preto'
+            }
+             //logo.innerHTML += '<p>Novo Logo<p>'
+            console.log('Clicado...')
+        }
+        function pegarTexto () {
+            const txtInput = document.getElementById('txtInput')
+            const resultado = document.getElementById('resultado')
+            resultado.innerHTML = `<p>${txtInput.value}</p>`
+        }
     </script>
 </html>
