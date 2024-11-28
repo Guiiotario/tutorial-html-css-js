@@ -29,18 +29,21 @@
         <main>
             <div class="wrapper">
                 <div class="flex-bt align-center">
-                <h1>Home</h1>
-                <button style="height: 40px;" onclick="openModal()">+ Adicionar</button>
+                    <h1>Home</h1>
+                    <button style="height: 40px;" onclick="openModal('#modal-add-ticker')">+ Adicionar</button>
+                </div>
+                <div id="card-list">
+                    
                 </div>
             </div>
         </main>
-        <div class="modal">
+        <div class="modal" id="modal-add-ticker" onclick="closeModal(event, '#modal-add-ticker')">
             <main>
                 <header class="flex-bt align-center">
                     <h1>Adicionar Ação</h1>
-                    <button onclick="closeModal()">⨉</button>
+                    <button onclick="closeModal(null, '#modal-add-ticker')">⨉</button>
                 </header>
-             <form onsubmit="addTicker(event)">
+                <form onsubmit="addTicker(event)">
                     <label for="urlLogo">URL Logo:</label>
                     <input type="text" id="urlLogo" name="urlLogo">
                     <label for="nameCompany">Nome da Empresa:</label>
@@ -81,5 +84,3 @@
     </body>
     <script src="./js/main.js"></script>
 </html>
-   
-</html>,
